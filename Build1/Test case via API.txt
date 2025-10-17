@@ -1,0 +1,57 @@
+Request 
+--------
+
+{
+  "messages": [
+    {
+      "role": "user",
+      "content": "Generate ONLY non-functional test cases (not functional).Generate only for feature feature under test is:Online payment transfer between accounts.Generate exactly 8 test cases.Include both positive and negative scenarios. Use meaningful and professional scenario names."
+
+    },
+     {
+      "role": "user",
+      "content": "Generate high-quality non-functional test cases focusing on:Performance,Security,Usability,Reliability,Compatibility,Accessibility"
+
+    },
+     {
+      "role": "system",
+      "content": "You are an expert QA test architect specialized in banking domain testing.The project is a European retail banking system (compliant with GDPR and PSD2 regulations)"
+    }
+  ],
+  "model": "llama-3.3-70b-versatile"
+}
+
+Response :
+----------
+{
+    "id": "chatcmpl-c166c26f-e842-4540-98b6-740c0b0d326b",
+    "object": "chat.completion",
+    "created": 1760616068,
+    "model": "llama-3.3-70b-versatile",
+    "choices": [
+        {
+            "index": 0,
+            "message": {
+                "role": "assistant",
+                "content": "Here are 8 non-functional test cases for the online payment transfer feature:\n\n1. **Payment Transfer Performance Under Load**: Test the system's performance when 1000 concurrent users initiate online payment transfers between accounts. Measure the response time, throughput, and system resource utilization to ensure the system can handle the expected load without significant degradation.\n\n2. **Secure Sensitive Data Transmission**: Test the encryption and secure transmission of sensitive data (e.g., account numbers, payment amounts) during online payment transfers. Verify that the data is encrypted using industry-standard protocols (e.g., TLS) and that no sensitive data is logged or stored in plaintext.\n\n3. **User Experience During Peak Hours**: Test the usability of the online payment transfer feature during peak hours (e.g., lunchtime, end-of-month) when the system is under heavy load. Measure the time it takes for users to complete a payment transfer, and verify that the system provides clear and concise error messages and feedback.\n\n4. **Reliability of Payment Transfer Retry Mechanism**: Test the system's reliability when a payment transfer fails due to a temporary error (e.g., network issue, server timeout). Verify that the system automatically retries the payment transfer a reasonable number of times before canceling the transaction and notifying the user.\n\n5. **Cross-Browser Compatibility for Payment Transfer**: Test the online payment transfer feature across different browsers (e.g., Chrome, Firefox, Safari) and versions to ensure compatibility and correct rendering of payment transfer screens. Verify that the system behaves as expected and that payment transfers are successfully completed across different browsers.\n\n6. **WCAG Accessibility Compliance for Visually Impaired Users**: Test the online payment transfer feature for accessibility compliance with the Web Content Accessibility Guidelines (WCAG 2.1) for visually impaired users. Verify that screen readers can correctly interpret payment transfer screens, and that users can complete a payment transfer using only keyboard navigation.\n\n7. **Payment Transfer Failure Due to Insufficient Funds**: Test the system's behavior when a user attempts to initiate a payment transfer with insufficient funds in the source account. Verify that the system returns a clear and concise error message, and that the user is prevented from completing the payment transfer.\n\n8. **Simultaneous Payment Transfers from Same Account**: Test the system's reliability and consistency when multiple payment transfers are initiated simultaneously from the same account. Verify that the system correctly handles the concurrent transactions, and that the account balance is updated accurately and in real-time."
+            },
+            "logprobs": null,
+            "finish_reason": "stop"
+        }
+    ],
+    "usage": {
+        "queue_time": 0.058346982,
+        "prompt_tokens": 137,
+        "prompt_time": 0.007802333,
+        "completion_tokens": 496,
+        "completion_time": 1.407105686,
+        "total_tokens": 633,
+        "total_time": 1.414908019
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_9e1e8f8435",
+    "x_groq": {
+        "id": "req_01k7peabrfe4k9yej91fpzqpga"
+    },
+    "service_tier": "on_demand"
+}

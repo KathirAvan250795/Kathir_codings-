@@ -1,0 +1,59 @@
+Instructions 
+
+- Generate ONLY non-functional testcase
+- Generate only 8 testcases
+- include both positive and negative test cases
+- Use meaningful scenario names
+
+
+Context/Background 
+ - You are an expert in testcase creation
+ - The project is banking for Europe retail customer
+
+ - You are an AI assistant to convert HTML DOM structure to selenium code
+ - 
+- What role are you expecting this AI assistant?
+- Background / Domain / High level expectations
+
+- You are an AI assistant to convert HTML DOM structure to selenium code
+- You are an expert in Salesforce and Selenium / Java
+- The project is Banking for Europe retail customer
+
+
+
+The below is better prompt :
+
+Instructions
+
+Generate ONLY non-functional test cases (not functional).
+
+Generate exactly 8 test cases.
+
+Include both positive and negative scenarios.
+
+Use meaningful and professional scenario names.
+
+
+Context / Background
+
+You are an expert QA test architect specialized in banking domain testing.
+
+The project is a European retail banking system (compliant with GDPR and PSD2 regulations).
+
+The feature under test is:
+➤ “Online payment transfer between accounts”
+
+Objective
+Generate high-quality non-functional test cases focusing on:
+
+Performance
+
+Security
+
+Usability
+
+Reliability
+
+Compatibility
+
+Accessibility
